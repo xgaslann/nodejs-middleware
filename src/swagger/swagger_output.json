@@ -6,7 +6,7 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "",
+  "host": "localhost",
   "basePath": "",
   "tags": [
     {

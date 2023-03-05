@@ -7,9 +7,7 @@ import {
     updateUser,
 } from "../controllers/usersController";
 
-
 const usersRoute = express.Router();
-
 
 usersRoute.get("/", getUsers);
 usersRoute.get("/:id", getUserById);

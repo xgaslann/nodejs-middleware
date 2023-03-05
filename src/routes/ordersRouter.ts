@@ -9,7 +9,6 @@ import {
 
 const ordersRoute = express.Router();
 
-
 ordersRoute.get("/", getOrders);
 ordersRoute.get("/:id", getOrderById);
 ordersRoute.post("/", createOrder);

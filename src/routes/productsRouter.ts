@@ -7,7 +7,6 @@ import {
     updateProduct,
 } from "../controllers/productsController";
 
-
 const productsRoute = express.Router();
 
 productsRoute.get("/", getProducts);
