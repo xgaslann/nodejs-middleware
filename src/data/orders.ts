@@ -1,6 +1,6 @@
-import { Order } from "../interfaces/Order";
+import { IOrder } from "../interfaces/IOrder";
 
-export const orders: Order[] = [
+export const orders: IOrder[] = [
     {
         id: "1",
         userId: "1",

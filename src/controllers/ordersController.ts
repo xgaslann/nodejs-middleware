@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Order } from "../interfaces/Order";
+import { IOrder } from "../interfaces/IOrder";
 import { orders } from "../data/orders";
 
 /**
@@ -27,7 +27,7 @@ export const getOrderById = (req: Request, res: Response) => {
 export const createOrder = (req: Request, res: Response) => {
     /* 	#swagger.tags = ['Order']*/
     const { userId, productId, quantity } = req.body;
-    const newOrder: Order = {
+    const newOrder: IOrder = {
         id: String(orders.length + 1),
         userId,
         productId,

@@ -1,6 +1,6 @@
-import { Product } from "../interfaces/Product";
+import { IProduct } from "../interfaces/IProduct";
 
-export const products: Product[] = [
+export const products: IProduct[] = [
     {
         id: "1",
         name: "Product 1",

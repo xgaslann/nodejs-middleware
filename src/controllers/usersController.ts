@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { User } from "../interfaces/User";
+import { IUser } from "../interfaces/IUser";
 import { users } from "../data/users";
 
 /**
@@ -28,7 +28,7 @@ export const getUserById = async (req: Request, res: Response) => {
 export const createUser = async (req: Request, res: Response) => {
     /* 	#swagger.tags = ['User']*/
     const { firstName, lastName, email, password } = req.body;
-    const newUser: User = {
+    const newUser: IUser = {
         id: String(users.length + 1),
         firstName,
         lastName,
@@ -43,7 +43,7 @@ export const updateUser = async (req: Request, res: Response) => {
     /* 	#swagger.tags = ['User']*/
     const { id } = req.params;
     const { firstName, lastName, email, password } = req.body;
-    const userIndex = users.findIndex((u) => u.id === id);
+    const userIndex = users.findIndex((u) => u.id === id);""
     if (userIndex !== -1) {
         users[userIndex] = {
             id,

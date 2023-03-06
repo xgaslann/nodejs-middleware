@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Product } from "../interfaces/Product";
+import { IProduct } from "../interfaces/IProduct";
 import { products } from "../data/products";
 
 /**
@@ -28,7 +28,7 @@ export const getProductById = (req: Request, res: Response) => {
 export const createProduct = (req: Request, res: Response) => {
     /* 	#swagger.tags = ['Product']*/
     const { name, price } = req.body;
-    const newProduct: Product = {
+    const newProduct: IProduct = {
         id: String(products.length + 1),
         name,
         price,
